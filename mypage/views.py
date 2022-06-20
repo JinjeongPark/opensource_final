@@ -6,4 +6,16 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return render(request,'index2.html')
+    return render(request,'index.html')
+
+def home(request):
+    return render(request,'index.html')
+
+def hobby(request):
+    return render(request,'hobby.html')
+
+def profile(request):
+    return render(request,'profile.html')
+
+def favorite_song(request):
+    return render(request,'favorite_song.html')

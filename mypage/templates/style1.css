@@ -1,0 +1,29 @@
+body {
+    height: auto;
+    font-family: sans-serif;
+    color: black;
+    background-image:url("https://t1.daumcdn.net/cfile/tistory/994D02385B0F686033");
+    background-size: 100% 100%;
+   }
+main {
+    color: black;
+}
+header {
+    background-color: rgb(245, 158, 158);
+    top: 130px;
+    left: 50px;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+header *{
+    display: inline;
+}
+header li{
+    margin: 20px;
+}
+header li a {
+    color: black;
+    text-decoration: none;
+}

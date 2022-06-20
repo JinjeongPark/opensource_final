@@ -19,9 +19,10 @@ from django.conf.urls import include
 from django.views.generic import RedirectView
 from django.conf import settings
 from django.conf.urls.static import static
+from mypage import views
 
 urlpatterns = [
-        path('mypage/',include("mypage.urls")),
-        path('',RedirectView.as_view(url="/mypage/",permanent=True)),
+        path('',RedirectView.as_view(url='mypage/',permanent=True)),
+        path('mypage/',include('mypage.urls')),
         path('admin/', admin.site.urls),
 ] + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
